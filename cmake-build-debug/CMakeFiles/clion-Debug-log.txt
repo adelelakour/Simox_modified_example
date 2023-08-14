@@ -1,0 +1,52 @@
+/snap/clion/248/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/248/bin/ninja/linux/x64/ninja -G Ninja -S /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example -B /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/cmake-build-debug
+CMake Warning (dev) at CMakeLists.txt:1 (PROJECT):
+  cmake_minimum_required() should be called prior to this top-level project()
+  call.  Please see the cmake-commands(7) manual for usage documentation of
+  both commands.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using Simox Binary Package from: /usr/local/share/Simox/cmake
+--  * Including /usr/local/share/Simox/cmake/SimoxMacros.cmake
+-- Qt4 Moc'ing: /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/GraspPlannerWindow.h
+-- Qt4 ui files: /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/GraspPlanner.ui
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.26)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (0.1s)
+CMake Warning (dev) at /usr/local/share/Simox/cmake/SimoxMacros.cmake:63 (ADD_EXECUTABLE):
+  Policy CMP0003 should be set before this line.  Add code such as
+
+    if(COMMAND cmake_policy)
+      cmake_policy(SET CMP0003 NEW)
+    endif(COMMAND cmake_policy)
+
+  as early as possible but after the most recent call to
+  cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+  because target "myDemo" links to some libraries for which the linker must
+  search:
+
+    -lpthread, -lpthread
+
+  and other libraries with known full path:
+
+    /usr/local/lib/libGraspStudio.so
+
+  CMake is adding directories in the second list to the linker search path in
+  case they are needed to find libraries from the first list (for backwards
+  compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+  or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+  more information.
+Call Stack (most recent call first):
+  /usr/local/share/Simox/cmake/SimoxMacros.cmake:107 (VirtualRobotQtApplication)
+  CMakeLists.txt:8 (SimoxQtApplication)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done (0.0s)
+-- Build files have been written to: /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/cmake-build-debug

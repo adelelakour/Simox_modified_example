@@ -1,0 +1,111 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_21915/fast && /usr/bin/make  -f CMakeFiles/cmTC_21915.dir/build.make CMakeFiles/cmTC_21915.dir/build
+make[1]: Entering directory '/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq'
+Building CXX object CMakeFiles/cmTC_21915.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4  -o CMakeFiles/cmTC_21915.dir/CheckSymbolExists.cxx.o -c /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq/CheckSymbolExists.cxx
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_21915.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_21915.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_21915.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-jRI7mq'
+Makefile:127: recipe for target 'cmTC_21915/fast' failed
+make: *** [cmTC_21915/fast] Error 2
+
+
+File CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c5db/fast && /usr/bin/make  -f CMakeFiles/cmTC_4c5db.dir/build.make CMakeFiles/cmTC_4c5db.dir/build
+make[1]: Entering directory '/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv'
+Building CXX object CMakeFiles/cmTC_4c5db.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4  -o CMakeFiles/cmTC_4c5db.dir/CheckSymbolExists.cxx.o -c /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv/CheckSymbolExists.cxx
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_4c5db.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_4c5db.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4c5db.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-uXv2lv'
+Makefile:127: recipe for target 'cmTC_4c5db/fast' failed
+make: *** [cmTC_4c5db/fast] Error 2
+
+
+File CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5ea61/fast && /usr/bin/make  -f CMakeFiles/cmTC_5ea61.dir/build.make CMakeFiles/cmTC_5ea61.dir/build
+make[1]: Entering directory '/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA'
+Building CXX object CMakeFiles/cmTC_5ea61.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++  -I/usr/include/qt4  -o CMakeFiles/cmTC_5ea61.dir/CheckSymbolExists.cxx.o -c /home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA/CheckSymbolExists.cxx
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA/CheckSymbolExists.cxx:8:19: note: suggested alternative: ‘Q_WS_X11’
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^~~~~~~~
+                   Q_WS_X11
+CMakeFiles/cmTC_5ea61.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_5ea61.dir/CheckSymbolExists.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_5ea61.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory '/home/adelelakour/SIMOX_SOURCE_2.3.73/simox-v2.3.73/OwnProject/Grasping_own_example/build/CMakeFiles/CMakeScratch/TryCompile-HwjdyA'
+Makefile:127: recipe for target 'cmTC_5ea61/fast' failed
+make: *** [cmTC_5ea61/fast] Error 2
+
+
+File CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
